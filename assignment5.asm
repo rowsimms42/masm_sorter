@@ -2,7 +2,7 @@ TITLE assignment5.asm    (assignment5.asm)
 
 ; Author: Rowan Simmons
 ; Last Modified: March 3, 2020
-; OSU email address: simmonli@oregonstate.edu
+; OSU email address: simmonrow@oregonstate.edu
 ; Course number/section: CS271
 ; Project Number: 5             Due Date: March 2, 2020
 ; Description: Create an array, generate random numbers, display array sorted and unsorted, and display median
@@ -172,7 +172,8 @@ fillArray ENDP
 ;pre-condition: array is filled with random values
 ;registers changed: esi, ecx, eax, ebp, ebx, edx
 ;**************************************************************************
-displayList PROC
+displayList PROC
+
 	push	ebp
 	mov		ebp, esp
 	mov		esi, [ebp+16]				;@array
